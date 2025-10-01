@@ -14,7 +14,7 @@ function Signup() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/user/signup",
+       "https://assingnment-backend-p162-agdnmfq99-shreya-tech-creates-projects.vercel.app/api/user/signup",
         form,
         { withCredentials: true }
       );
