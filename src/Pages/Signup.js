@@ -14,7 +14,7 @@ function Signup() {
     e.preventDefault();
     try {
       const res = await axios.post(
-      "https://assingnment-backend.vercel.app/api/user/singup",
+      "https://assingnment-backend.vercel.app/api/user/signup",
         form,
         { withCredentials: true }
       );
