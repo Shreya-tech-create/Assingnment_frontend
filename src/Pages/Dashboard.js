@@ -9,7 +9,7 @@ function Dashboard() {
   const fetchTasks = async () => {
     try {
       const token = localStorage.getItem('token'); // ✅ fetch token
-      const res = await axios.get('https://assingnment-backend-p162-agdnmfq99-shreya-tech-creates-projects.vercel.app/api/user/task', {
+      const res = await axios.get('https://assingnment-backend.vercel.app/api/user/task', {
         headers: { Authorization: `Bearer ${token}` },
         withCredentials: true, // ✅ cookies if needed
       });
